@@ -5,19 +5,26 @@ import Footer from "./pages/Footer";
 import Join from "./pages/Join";
 import Loading from "./pages/Header";
 import Properties from "./pages/Properties";
+import "react-scroll";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <NavBar />
+    <BrowserRouter>
+      <NavBar />
+      <section id="loading">
         <Loading />
+      </section>
+      <section id="properties">
         <Properties />
+      </section>
+      <section id="about-us">
         <AboutUs />
+      </section>
+      <section id="join">
         <Join />
-        <Footer />
-      </BrowserRouter>
-    </>
+      </section>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

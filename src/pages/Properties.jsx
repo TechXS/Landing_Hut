@@ -8,18 +8,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
-import CountDown from "../components/functions/CountDown";
 // import framer motion
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
+import { Link } from "react-scroll";
+
 
 function Properties() {
   // Active on select a tab
-  function active(e) {
-    let act = document.querySelectorAll(".active");
-    act[0].classList.remove("active");
-    e.target.classList.add("active");
-  }
+  // function active(e) {
+  //   let act = document.querySelectorAll(".active");
+  //   act[0].classList.remove("active");
+  //   e.target.classList.add("active");
+  // }
 
   // Like button of properties
   function like(e) {
@@ -30,14 +31,19 @@ function Properties() {
 
   return (
     // Start properties
+    <div  style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+
     <div className="properties">
-      <Container>
+      <Container >
         <AnimationTitles
           className="title mx-auto"
-          title="Discover more properties"
+          title="Discover more properties - HF"
         />
+        <p className="gray-50 mb-5">
+        Discover a seamless way to transition from your current home to your next dream abode while landlords effortlessly market their vacant properties. Our platform ensures smoother moves, better occupancy rates, and a hassle-free experience for everyone involved. Say goodbye to the stress of moving and hello to a world where your next perfect home is just a click away. Join our community and experience the ultimate convenience in home transitions today!
+        </p>
         {/* Start tabs */}
-        <div className="tabs d-flex justify-content-start justify-content-sm-center align-items-center flex-nowrap w-lg-50">
+        {/* <div className="tabs d-flex justify-content-start justify-content-sm-center align-items-center flex-nowrap w-lg-50">
           <Swiper
             className="mySwiper overflow-none"
             grabCursor={true}
@@ -91,7 +97,7 @@ function Properties() {
               </Button>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </div> */}
         {/* End tabs */}
         {/* Start cards */}
         <motion.div
@@ -145,15 +151,14 @@ function Properties() {
                     Cascade Apartments
                   </h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div className="d-flex">
-                    <div className="me-3">
-                      <CountDown h={9} m={45} s={8} />
-                      <span className="gray-90">Remaining Time</span>
-                    </div>
-                    <div>
-                      <h6 className="">$29.71</h6>
-                      <span className="gray-90">Current Bid</span>
-                    </div>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
                 </Card.Body>
               </Card>
@@ -172,15 +177,14 @@ function Properties() {
                   </div>
                   <h5 className="mt-2 fw-normal">Denkell Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div className="d-flex">
-                    <div className="me-3">
-                      <CountDown h={23} m={16} s={11} />
-                      <span className="gray-90">Remaining Time</span>
-                    </div>
-                    <div>
-                      <h6 className="">$17.31</h6>
-                      <span className="gray-90">Current Bid</span>
-                    </div>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
                 </Card.Body>
               </Card>
@@ -199,15 +203,14 @@ function Properties() {
                   </div>
                   <h5 className="mt-2 fw-normal">Sky_ville Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div className="d-flex">
-                    <div className="me-3">
-                      <CountDown h={23} m={6} s={1} />
-                      <span className="gray-90">Remaining Time</span>
-                    </div>
-                    <div>
-                      <h6 className="">$16.62</h6>
-                      <span className="gray-90">Current Bid</span>
-                    </div>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
                 </Card.Body>
               </Card>
@@ -226,15 +229,14 @@ function Properties() {
                   </div>
                   <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div className="d-flex">
-                    <div className="me-3">
-                      <CountDown h={23} m={6} s={1} />
-                      <span className="gray-90">Remaining Time</span>
-                    </div>
-                    <div>
-                      <h6 className="">$16.62</h6>
-                      <span className="gray-90">Current Bid</span>
-                    </div>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
                 </Card.Body>
               </Card>
@@ -253,15 +255,14 @@ function Properties() {
                   </div>
                   <h5 className="mt-2 fw-normal">Spruce Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div className="d-flex">
-                    <div className="me-3">
-                      <CountDown h={10} m={30} s={58} />
-                      <span className="gray-90">Remaining Time</span>
-                    </div>
-                    <div>
-                      <h6 className="">$17.01</h6>
-                      <span className="gray-90">Current Bid</span>
-                    </div>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
                 </Card.Body>
               </Card>
@@ -270,6 +271,12 @@ function Properties() {
         </motion.div>
         {/* End cards */}
       </Container>
+    </div>
+    {/* link to HF */}
+        <Link           
+            to="#" smooth={true} duration={500}>
+          <Button variant="primary ms-0">Sign Up</Button>
+            </Link>
     </div>
     // End properties
   );

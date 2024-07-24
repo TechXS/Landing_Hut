@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CountDown from "../components/functions/CountDown";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
+import { Link } from "react-scroll";
+
 
 function Loading() {
   // Like button of properties
@@ -25,7 +27,10 @@ function Loading() {
            Effortlessly manage your properties, tenants, and maintenance requests 
            with our all-in-one solution.
           </p>
+          <Link to="properties" smooth={true} duration={500}>
+                
           <Button className="m-0 my-3 px-5 py-2 fs-5 fw-bold">Explore</Button>
+              </Link>
           <div
             // style={{ color: "white" }}
             className="d-none d-md-flex justify-content-between align-items-center my-4"
@@ -51,54 +56,52 @@ function Loading() {
           className="w-100 my-5"
         >
           <div className="cards">
+          <Card className="bg-white-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/pexels-rachel-claire-8112843 1.webp")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
+                  <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>
+                  <p className="gray-90">@TECHX nest_quest agency</p>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
+                  </div>
+                </Card.Body>
+              </Card>
             <Card className="bg-white-100 rounded">
-              <Card.Body className="p-2">
-                <div className="rounded overflow-hidden position-relative">
-                  <Card.Img
-                    variant="top"
-                    alt="img"
-                    src={require("../images/properties/house_big-1.webp")}
-                  />
-                  <i className="fa-regular fa-heart like" onClick={like}></i>
-                </div>
-                <h5 className="mt-2 fw-normal">Cascade Apartments</h5>
-                <p className="gray-90">@TECHX nest_quest agency</p>
-                <div className="d-flex">
-                  <div className="me-3">
-                    <CountDown h={18} m={21} s={8} />
-                    <span className="gray-90">Remaining Time</span>
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/pexels-rachel-claire-8112843 1.webp")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <div>
-                    <h6 className="">$15.67</h6>
-                    <span className="gray-90">Current Bid</span>
+                  <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>
+                  <p className="gray-90">@TECHX nest_quest agency</p>
+                  <div  style={{
+                    display:"flex",
+                    alignItems:"center",
+                    justifyContent:"space-between"
+                  }}>
+                      <div className="gray-90">Current Price</div>
+                      <h6 className="">$17.01</h6> 
+                 
                   </div>
-                </div>
-              </Card.Body>
-            </Card>
-            <Card className="bg-white-100">
-              <Card.Body className="p-2">
-                <div className="rounded overflow-hidden position-relative">
-                  <Card.Img
-                    variant="top"
-                    alt="img"
-                    src={require("../images/properties/house_big.webp")}
-                  />
-                  <i className="fa-regular fa-heart like" onClick={like}></i>
-                </div>
-                <h5 className="mt-2  fw-normal">Blue Sky</h5>
-                <p className="gray-90">@TECHX nest_quest agency</p>
-                <div className="d-flex">
-                  <div className="me-3">
-                    <CountDown h={23} m={16} s={11} />
-                    <span className="gray-90">Remaining Time</span>
-                  </div>
-                  <div>
-                    <h6 className="">$17.31</h6>
-                    <span className="gray-90">Current Bid</span>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
+                </Card.Body>
+              </Card>
           </div>
         </motion.div>
         <motion.div

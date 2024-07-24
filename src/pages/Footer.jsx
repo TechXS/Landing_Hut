@@ -12,11 +12,7 @@ function Footer() {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <img
-              src={require("../images/logo/logo-01.png")}
-              alt="logo"
-              className="mb-3"
-            />
+            
             <p className="gray-100">
               Please contact us if you have any specific <br /> idea or request.
             </p>
