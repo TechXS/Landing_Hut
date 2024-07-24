@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AnimationTitles from "../components/functions/AnimationTitles";
 import { Link } from "react-scroll";
-import { Button } from "react-bootstrap";
 
 
 

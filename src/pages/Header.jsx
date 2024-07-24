@@ -1,6 +1,5 @@
 import { Button, Card, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CountDown from "../components/functions/CountDown";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
 import { Link } from "react-scroll";
