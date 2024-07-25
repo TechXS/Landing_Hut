@@ -273,7 +273,7 @@ function Properties() {
     </div>
     {/* link to HF */}
         <a          
-            href={process.env.REACT_APP_HF_SIGNUP} >
+            href={`${process.env.REACT_APP_HF_SIGNUP}`} >
           <Button variant="primary ms-0">Sign Up</Button>
             </a>
     </div>

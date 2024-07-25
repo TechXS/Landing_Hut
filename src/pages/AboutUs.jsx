@@ -21,7 +21,7 @@ function AboutUs() {
           you can ensure compliance with regulations, conduct tenant screenings, and maintain positive tenant relationships effortlessly.
           </p>
 {/* TMS LOGIN */}
-          <a href={process.env.REACT_APP_TMS_SIGNUP}>
+          <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}>
           <Button variant="primary ms-0">Sign Up</Button>
             </a>
         </motion.div>

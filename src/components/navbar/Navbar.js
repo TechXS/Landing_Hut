@@ -49,9 +49,9 @@ function NavBar() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href={process.env.REACT_APP_TMS_SIGNIN}>TMS</Dropdown.Item>
-              <Dropdown.Item href={process.env.REACT_APP_HF_SIGNIN}>HF</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">CLA</Dropdown.Item>
+              <Dropdown.Item href={`${process.env.REACT_APP_TMS_SIGNIN}`}>TMS</Dropdown.Item>
+              <Dropdown.Item href={`${process.env.REACT_APP_HF_SIGNIN}`}>HF</Dropdown.Item>
+              <Dropdown.Item href="#">CLA</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>

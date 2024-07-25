@@ -34,7 +34,7 @@ function Join() {
         >
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
             {/* link to TMS landlor */}
-            <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
+            <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">1</h4>
             <img src={require("../images/illustration/01.webp")} alt="img" />
             <AnimationTitles
@@ -49,7 +49,7 @@ function Join() {
             </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
+          <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}  style={{ textDecoration: 'none' }}>
 
             <h4 className="gray-100 mb-5">2</h4>
             <img src={require("../images/illustration/02.webp")} alt="img" />
@@ -63,7 +63,7 @@ function Join() {
           </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
+          <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">3</h4>
             <img src={require("../images/illustration/03.webp")} alt="img" />
             <AnimationTitles
@@ -76,7 +76,7 @@ function Join() {
           </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
+          <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">4</h4>
             <img src={require("../images/illustration/04.webp")} alt="img" />
             <AnimationTitles
