@@ -29,11 +29,11 @@ function NavBar() {
                 Manage
               </Link>
             </Nav.Link>
-            <Nav.Link className="px-lg-3">
+            {/* <Nav.Link className="px-lg-3">
               <Link to="about-us" smooth={true} duration={500}>
                 About Us
               </Link>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link>
               <Link to="join" smooth={true} duration={500}>
                 Features
@@ -51,7 +51,7 @@ function NavBar() {
             <Dropdown.Menu>
               <Dropdown.Item href={`${process.env.REACT_APP_TMS_SIGNIN}`}>TMS</Dropdown.Item>
               <Dropdown.Item href={`${process.env.REACT_APP_HF_SIGNIN}`}>HF</Dropdown.Item>
-              <Dropdown.Item href="#">CLA</Dropdown.Item>
+              <Dropdown.Item href={`${process.env.REACT_APP_CLA_SIGNIN}`}>CLA</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
