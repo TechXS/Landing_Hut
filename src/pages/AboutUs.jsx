@@ -1,7 +1,6 @@
 import { Button, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
-import { Link } from "react-scroll";
 
 
 function AboutUs() {
@@ -22,9 +21,9 @@ function AboutUs() {
           you can ensure compliance with regulations, conduct tenant screenings, and maintain positive tenant relationships effortlessly.
           </p>
 {/* TMS LOGIN */}
-          <Link to="#" smooth={true} duration={500}>
+          <a href={process.env.REACT_APP_TMS_SIGNUP}>
           <Button variant="primary ms-0">Sign Up</Button>
-            </Link>
+            </a>
         </motion.div>
         <motion.div
           initial={{ x: 200 }}

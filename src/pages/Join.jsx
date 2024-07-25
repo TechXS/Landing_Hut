@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AnimationTitles from "../components/functions/AnimationTitles";
-import { Link } from "react-scroll";
 
 
 
@@ -35,7 +34,7 @@ function Join() {
         >
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
             {/* link to TMS landlor */}
-            <Link to="#" smooth={true} duration={500}>
+            <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">1</h4>
             <img src={require("../images/illustration/01.webp")} alt="img" />
             <AnimationTitles
@@ -47,10 +46,10 @@ function Join() {
               Simplify rent payments with secure and convenient M-Pesa 
               transactions.
             </p>
-            </Link>
+            </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <Link to="#" smooth={true} duration={500}>
+          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
 
             <h4 className="gray-100 mb-5">2</h4>
             <img src={require("../images/illustration/02.webp")} alt="img" />
@@ -61,10 +60,10 @@ function Join() {
             <p className="gray-50">
               Gain valuable insights with detailed reports and analytics.
             </p>
-          </Link>
+          </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <Link to="#" smooth={true} duration={500}>
+          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">3</h4>
             <img src={require("../images/illustration/03.webp")} alt="img" />
             <AnimationTitles
@@ -74,10 +73,10 @@ function Join() {
             <p className="gray-50">
               Handle multiple properties seamlessly within one platform.
             </p>
-          </Link>
+          </a>
           </SwiperSlide>
           <SwiperSlide className="py-4 px-3 align-items-start flex-column">
-          <Link to="#" smooth={true} duration={500}>
+          <a href={process.env.REACT_APP_TMS_SIGNUP}  style={{ textDecoration: 'none' }}>
             <h4 className="gray-100 mb-5">4</h4>
             <img src={require("../images/illustration/04.webp")} alt="img" />
             <AnimationTitles
@@ -87,7 +86,7 @@ function Join() {
             <p className="gray-50">
               Streamline maintenance requests for quick and effective resolutions.
             </p>
-          </Link>
+          </a>
           </SwiperSlide>
         </Swiper>
       </Container>

@@ -11,7 +11,6 @@ import { Pagination, Navigation } from "swiper/modules";
 // import framer motion
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
-import { Link } from "react-scroll";
 
 
 function Properties() {
@@ -273,10 +272,10 @@ function Properties() {
       </Container>
     </div>
     {/* link to HF */}
-        <Link           
-            to="#" smooth={true} duration={500}>
+        <a          
+            href={process.env.REACT_APP_HF_SIGNUP} >
           <Button variant="primary ms-0">Sign Up</Button>
-            </Link>
+            </a>
     </div>
     // End properties
   );
