@@ -67,15 +67,7 @@ function Loading() {
                   </div>
                   <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div  style={{
-                    display:"flex",
-                    alignItems:"center",
-                    justifyContent:"space-between"
-                  }}>
-                      <div className="gray-90">Current Price</div>
-                      <h6 className="">$17.01</h6> 
                  
-                  </div>
                 </Card.Body>
               </Card>
             <Card className="bg-white-100 rounded">
@@ -90,15 +82,7 @@ function Loading() {
                   </div>
                   <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>
                   <p className="gray-90">@TECHX nest_quest agency</p>
-                  <div  style={{
-                    display:"flex",
-                    alignItems:"center",
-                    justifyContent:"space-between"
-                  }}>
-                      <div className="gray-90">Current Price</div>
-                      <h6 className="">$17.01</h6> 
-                 
-                  </div>
+                  
                 </Card.Body>
               </Card>
           </div>
