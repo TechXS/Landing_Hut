@@ -240,9 +240,7 @@ body {
   position: relative;
 }
 
-.about .container div div div img {
-  width: 230px;
-  height: 150px;
+.about .container div  div img {
   object-fit: cover;
   border-radius: 10px;
 }
@@ -269,71 +267,23 @@ body {
 }
 
 .about .container div div:first-child div:first-child::before {
-  content: "Ukraine";
+  content: "Kisumu";
 }
 
 .about .container div div:first-child div:last-child::before {
-  content: "Norway";
+  content: "Mombasa";
 }
 
 .about .container div div:last-child div:first-child::before {
-  content: "Portugal";
+  content: "Nairobi";
 }
 .about .container div div:last-child div:last-child::before {
-  content: "Brazil";
+  content: "Mandera";
 }
 
-.about .container div div:first-child div:last-child::after {
-  content: "8.9% Appreciation";
-  position: absolute;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  top: -10%;
-  left: 70%;
-  transform: translateX(-50%);
-  background-color: #7E56DA;
-  color: white;
-  font-size: 10px;
-  letter-spacing: 0.3px;
-  border-radius: 20px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
 
-.about .container div div:last-child div:first-child::after {
-  content: "10.2% Rent Yield";
-  position: absolute;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  bottom: -10%;
-  right: 70%;
-  transform: translateX(50%);
-  background-color: #7E56DA;
-  color: white;
-  font-size: 10px;
-  letter-spacing: 0.3px;
-  border-radius: 20px;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
+
+
 
 /* End about us */
 

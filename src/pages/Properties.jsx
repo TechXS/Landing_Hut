@@ -22,11 +22,11 @@ function Properties({properties}) {
   // }
 
   // Like button of properties
-  function like(e) {
-    return e.target.classList.value === "fa-regular fa-heart like"
-      ? (e.target.classList.value = "fa-solid fa-heart like text-danger")
-      : (e.target.classList.value = "fa-regular fa-heart like");
-  }
+  // function like(e) {
+  //   return e.target.classList.value === "fa-regular fa-heart like"
+  //     ? (e.target.classList.value = "fa-solid fa-heart like text-danger")
+  //     : (e.target.classList.value = "fa-regular fa-heart like");
+  // }
 
   return (
     // Start properties
@@ -153,10 +153,10 @@ function Properties({properties}) {
                           src={property.images[0].imageUrl}
                           style={{ objectFit:'cover',height:'14rem',width:"16rem"}}
                         />
-                        <i
+                        {/* <i
                           className="fa-regular fa-heart like"
                           onClick={like}
-                        ></i>
+                        ></i> */}
                       </div>
                       <h5 className="mt-2 fw-normal">{ property?.name}</h5>
                       <p className="gray-90">{ property?.location?.name}</p>
