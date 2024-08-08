@@ -22,7 +22,7 @@ function AboutUs() {
           </p>
 {/* TMS LOGIN */}
           <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}>
-          <Button variant="primary ms-0">Sign Up</Button>
+          <Button variant="primary ms-0">Get Started</Button>
             </a>
         </motion.div>
         <motion.div
