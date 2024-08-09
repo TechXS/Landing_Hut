@@ -20,6 +20,7 @@ jobs:
       REACT_APP_HF_SIGNIN: ${{secrets.REACT_APP_HF_SIGNIN}}
       REACT_APP_CLA_SIGNUP: ${{secrets.REACT_APP_CLA_SIGNUP}}
       REACT_APP_CLA_SIGNIN: ${{secrets.REACT_APP_CLA_SIGNIN}}
+      REACT_APP_HF: ${{secrets.REACT_APP_HF}}
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
