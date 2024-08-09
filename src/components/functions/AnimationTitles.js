@@ -30,7 +30,7 @@ function AnimationTitles({title, className}) {
     className={className}
   >
     {title.split("").map((char, index) => (
-      <motion.span variants={spanVariants} key={index}>
+      <motion.span variants={spanVariants} key={index} style={{color: "#7E56DA"}}>
         {char}
       </motion.span>
     ))}

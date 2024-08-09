@@ -6,16 +6,37 @@ import Join from "./pages/Join";
 import Loading from "./pages/Header";
 import Properties from "./pages/Properties";
 import "react-scroll";
+import {useEffect, useState} from "react";
 
 function App() {
-  return (
+    const [properties,setProperties] = useState([])
+    useEffect(() => {
+        getProperties();
+    },[])
+    const getProperties = async () => {
+        try {
+            const data = await fetch(
+                `${process.env.REACT_APP_HF}/api/client/properties`
+            );
+            if (data.status !== 200) {
+                throw Error("Failed to fetch")
+            }
+            const result = await data.json()
+            setProperties(result)
+
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    return (
     <BrowserRouter>
       <NavBar />
       <section id="loading">
-        <Loading />
+        <Loading properties={properties}/>
       </section>
       <section id="properties">
-        <Properties />
+        <Properties properties={properties}/>
       </section>
       <section id="about-us">
         <AboutUs />

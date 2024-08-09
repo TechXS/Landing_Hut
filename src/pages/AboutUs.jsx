@@ -14,16 +14,19 @@ function AboutUs() {
         >
           <AnimationTitles title="Manage with ease - TMS" className="title" />
           <p className="gray-50 mb-5">
-          The Tenant Management System (TMS) in our property management application
-          is designed to streamline tenant-related processes by offering comprehensive tenant profiles,
-          seamless communication, and efficient rent collection. It also facilitates easy management of
-          maintenance requests, secure document storage, and insightful reporting and analytics. With TMS,
-          you can ensure compliance with regulations, conduct tenant screenings, and maintain positive tenant relationships effortlessly.
+            The Tenant Management System (TMS) in our property management
+            application is designed to streamline tenant-related processes by
+            offering comprehensive tenant profiles, seamless communication, and
+            efficient rent collection. It also facilitates easy management of
+            maintenance requests, secure document storage, and insightful
+            reporting and analytics. With TMS, you can ensure compliance with
+            regulations, conduct tenant screenings, and maintain positive tenant
+            relationships effortlessly.
           </p>
-{/* TMS LOGIN */}
+          {/* TMS LOGIN */}
           <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}>
-          <Button variant="primary ms-0">Sign Up</Button>
-            </a>
+            <Button variant="primary ms-0">Get Started</Button>
+          </a>
         </motion.div>
         <motion.div
           initial={{ x: 200 }}
@@ -31,37 +34,12 @@ function AboutUs() {
           transition={{ duration: 0.8 }}
           className="d-flex flex-column"
         >
-          <div className="d-flex">
-            <div>
-              <img
-                src={require("..//images/bohdan-d-fh6o-XkVQG8-unsplash.webp")}
-                className="p-0 me-2 img"
-                alt="img"
-              />
-            </div>
-            <div>
-              <img
-                src={require("..//images/john-o-nolan-6f_ANCcbj3o-unsplash.webp")}
-                className="p-0 img"
-                alt="img"
-              />
-            </div>
-          </div>
-          <div className="d-flex">
-            <div>
-              <img
-                src={require("..//images/julia-solonina-ci19YINguoc-unsplash.webp")}
-                className="p-0 me-2 img"
-                alt="img"
-              />
-            </div>
-            <div>
-              <img
-                src={require("..//images/theater-amazonas-manaus.webp")}
-                className="p-0 img"
-                alt="img"
-              />
-            </div>
+          <div className="d-flex ">
+            <img
+              src={require("..//images/click-smith-nick254-media-ltd-833P7yxEHF8-unsplash (1).jpg")}
+              className="p-0 me-2 img"
+              alt="img"
+            />
           </div>
         </motion.div>
       </Container>
