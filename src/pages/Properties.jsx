@@ -242,7 +242,7 @@ function Properties({properties}) {
         </Container>
       </div>
       {/* link to HF */}
-      <a href={`${process.env.REACT_APP_HF_SIGNUP}`}>
+      <a href={`${process.env.REACT_APP_HF}/browse/properties`}>
         <Button variant="primary ms-0">Browse more properties</Button>
       </a>
     </div>

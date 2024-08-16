@@ -24,7 +24,7 @@ function AboutUs() {
             relationships effortlessly.
           </p>
           {/* TMS LOGIN */}
-          <a href={`${process.env.REACT_APP_TMS_SIGNUP}`}>
+          <a href={`${process.env.REACT_APP_TMS}/auth/signup`}>
             <Button variant="primary ms-0">Get Started</Button>
           </a>
         </motion.div>
