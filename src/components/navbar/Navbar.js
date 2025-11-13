@@ -10,18 +10,19 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 
 function NavBar() {
-  console.log("TMS URL:", process.env.REACT_APP_TMS_SIGNIN);
+  const handleSignIn = (url) => {
+    if (url) {
+      window.location.href = url;
+    } else {
+      console.error('Sign in URL is undefined');
+    }
+  };
+
   return (
     <Navbar expand="lg" className="py-3">
       <Container>
         <Navbar.Brand href="#" className="me-lg-5">
-          <img
-            className="logo"
-            src={logo}
-            alt="logo-01"
-            width={50}
-            height={50}
-          />
+          <img className="logo" src={logo} alt="logo-01" width={50} height={50} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -36,11 +37,6 @@ function NavBar() {
                 Manage
               </Link>
             </Nav.Link>
-            {/* <Nav.Link className="px-lg-3">
-              <Link to="about-us" smooth={true} duration={500}>
-                About Us
-              </Link>
-            </Nav.Link> */}
             <Nav.Link>
               <Link to="join" smooth={true} duration={500}>
                 Features
@@ -49,24 +45,23 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex align-items-center order">
+          
           <Dropdown>
             <Dropdown.Toggle variant="primary" id="dropdown-basic">
-              Sign In
+            Sign In
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href={`${process.env.REACT_APP_TMS}/auth/signin`}>
+              <Dropdown.Item onClick={() => handleSignIn(process.env.REACT_APP_TMS_SIGNIN)}>
                 TMS
               </Dropdown.Item>
-              <Dropdown.Item href={`${process.env.REACT_APP_HF}/auth/signin`}>
-                HF
-              </Dropdown.Item>
-              <Dropdown.Item href={`${process.env.REACT_APP_CLA_SIGNIN}`}>
+              <Dropdown.Item onClick={() => handleSignIn(process.env.REACT_APP_CLA_SIGNIN)}>
                 CLA
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
+        
       </Container>
     </Navbar>
   );
