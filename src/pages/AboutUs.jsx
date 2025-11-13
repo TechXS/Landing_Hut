@@ -7,27 +7,31 @@ function AboutUs() {
     {
       icon: "💰",
       title: "Automated Rent Collection",
-      description: "Seamless M-Pesa integration for secure, timely payments with automated reminders and payment tracking.",
-      color: "#7E56DA"
+      description:
+        "Seamless M-Pesa integration for secure, timely payments with automated reminders and payment tracking.",
+      color: "#7E56DA",
     },
     {
       icon: "💬",
       title: "Tenant Communication Hub",
-      description: "Keep all tenant communications organized in one place with built-in messaging and notification system.",
-      color: "#356DF6"
+      description:
+        "Keep all tenant communications organized in one place with built-in messaging and notification system.",
+      color: "#356DF6",
     },
     {
       icon: "🔧",
       title: "Smart Maintenance Tracking",
-      description: "Manage maintenance requests efficiently with priority tracking, vendor assignment, and status updates.",
-      color: "#F6A756"
+      description:
+        "Manage maintenance requests efficiently with priority tracking, vendor assignment, and status updates.",
+      color: "#F6A756",
     },
     {
       icon: "📊",
       title: "Powerful Analytics & Reporting",
-      description: "Make data-driven decisions with comprehensive reports on occupancy, revenue, expenses, and trends.",
-      color: "#56DAA1"
-    }
+      description:
+        "Make data-driven decisions with comprehensive reports on occupancy, revenue, expenses, and trends.",
+      color: "#56DAA1",
+    },
   ];
 
   return (
@@ -45,8 +49,9 @@ function AboutUs() {
             title="Why Choose TMS?"
           />
           <p className="lead gray-90 mx-auto" style={{ maxWidth: "700px" }}>
-            The complete property management platform designed for modern landlords.
-            Streamline operations, automate workflows, and grow your business.
+            The complete property management platform designed for modern
+            landlords. Streamline operations, automate workflows, and grow your
+            business.
           </p>
         </motion.div>
 
@@ -63,14 +68,16 @@ function AboutUs() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     <Card className="tms-feature-card h-100 border-0 shadow-sm p-4">
-                      <div 
+                      <div
                         className="tms-feature-icon mb-3"
                         style={{ backgroundColor: `${feature.color}15` }}
                       >
                         <span style={{ fontSize: "2rem" }}>{feature.icon}</span>
                       </div>
                       <h5 className="fw-bold mb-2">{feature.title}</h5>
-                      <p className="gray-90 mb-0 small">{feature.description}</p>
+                      <p className="gray-90 mb-0 small">
+                        {feature.description}
+                      </p>
                     </Card>
                   </motion.div>
                 </Col>
@@ -92,7 +99,7 @@ function AboutUs() {
                   alt="Property Management Dashboard"
                   style={{ objectFit: "cover", height: "400px" }}
                 />
-                
+
                 {/* Floating Stats Cards */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -129,10 +136,13 @@ function AboutUs() {
           transition={{ duration: 0.8 }}
           className="tms-cta-box text-center p-5 rounded-4 mt-5"
         >
-          <h3 className="fw-bold mb-3">Trusted by Property Managers Across Kenya</h3>
+          <h3 className="fw-bold mb-3">
+            Trusted by Property Managers Across Kenya
+          </h3>
           <p className="gray-90 mb-4 mx-auto" style={{ maxWidth: "600px" }}>
-            Join hundreds of landlords who have simplified their property management 
-            workflow with TMS. Save time, reduce stress, and increase your revenue.
+            Join hundreds of landlords who have simplified their property
+            management workflow with TMS. Save time, reduce stress, and increase
+            your revenue.
           </p>
           <a href={`${process.env.REACT_APP_TMS}/auth/signup`}>
             <Button variant="primary" size="lg" className="px-5 py-3 fw-bold">

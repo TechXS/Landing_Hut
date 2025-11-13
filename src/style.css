@@ -673,7 +673,8 @@ footer div span {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -682,7 +683,7 @@ footer div span {
 }
 
 .tms-cta-box {
-  background: linear-gradient(135deg, #7E56DA 0%, #356DF6 100%);
+  background: linear-gradient(135deg, #7e56da 0%, #356df6 100%);
   color: white;
   box-shadow: 0 10px 40px rgba(126, 86, 218, 0.3);
 }
@@ -697,7 +698,7 @@ footer div span {
 
 .tms-cta-box .btn-primary {
   background: white;
-  color: #7E56DA;
+  color: #7e56da;
   border: none;
 }
 
@@ -716,22 +717,22 @@ footer div span {
   .title {
     font-size: 32px !important;
   }
-  
+
   .tms-about-section {
     padding: 60px 0;
   }
-  
+
   .tms-floating-stat {
     position: static;
     display: inline-block;
     margin: 10px;
   }
-  
+
   .tms-stat-1,
   .tms-stat-2 {
     animation: none;
   }
-  
+
   .tms-image-container {
     margin-bottom: 20px;
   }
@@ -741,7 +742,7 @@ footer div span {
   .title {
     font-size: 40px !important;
   }
-  
+
   .tms-floating-stat {
     transform: scale(0.9);
   }
@@ -751,7 +752,7 @@ footer div span {
   .tms-stat-1 {
     right: -30px;
   }
-  
+
   .tms-stat-2 {
     left: -30px;
   }
