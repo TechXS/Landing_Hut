@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   /*background-color: #121420;*/
-  background-color:white;
+  background-color: white;
 }
 
 :root {
@@ -240,7 +240,7 @@ body {
   position: relative;
 }
 
-.about .container div  div img {
+.about .container div div img {
   object-fit: cover;
   border-radius: 10px;
 }
@@ -280,10 +280,6 @@ body {
 .about .container div div:last-child div:last-child::before {
   content: "Mandera";
 }
-
-
-
-
 
 /* End about us */
 
@@ -375,7 +371,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(./images/logo/Vector.png), url(./images/logo/Vector-1.png);
+  background-image: url(./images/logo/Vector.png),
+    url(./images/logo/Vector-1.png);
   background-repeat: no-repeat;
   background-position: bottom right 30px, top 10px left;
   z-index: -1;
@@ -574,3 +571,69 @@ footer div span {
 }
 
 /* End media query */
+
+/* TMS Landing Page Specific Styles */
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-number {
+  display: inline-block;
+}
+
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.2);
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(126, 86, 218, 0.3);
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments for TMS landing */
+@media (max-width: 768px) {
+  .hero-image-container {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 32px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .title {
+    font-size: 40px !important;
+  }
+}
+
+/* End TMS Landing Page Specific Styles */
