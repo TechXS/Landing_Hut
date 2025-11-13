@@ -1,117 +1,93 @@
-import {Button, Card, Container} from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
-
-function Loading({properties}) {
-    // Like button of properties
-    // function like(e) {
-    //     return e.target.classList.value === "fa-regular fa-heart like"
-    //         ? (e.target.classList.value = "fa-solid fa-heart like text-danger")
-    //         : (e.target.classList.value = "fa-regular fa-heart like");
-    // }
-
-    return (
-        <div className="loading position-relative">
-            <Container
-                className="d-flex justify-content-between align-items-center gap-md-5 flex-column flex-md-row mt-3 mt-xl-4 overflow-hidden">
-                <motion.div
-                    initial={{x: -400}}
-                    animate={{x: 0}}
-                    transition={{duration: 0.8}}
-                >
-                    <AnimationTitles title="Future of Property Management"/>
-                    <p className="gray-90 mt-3 fs-5">
-                        Effortlessly manage your properties, tenants, and maintenance requests
-                        with our all-in-one solution.
-                    </p>
-                    <Link to="properties" smooth={true} duration={500}>
-
-                        <Button className="m-0 my-3 px-5 py-2 fs-5 fw-bold">Explore</Button>
-                    </Link>
-                    <div
-                        // style={{ color: "white" }}
-                        className="d-none d-md-flex justify-content-between align-items-center my-4"
-                    >
-                        <div>
-                            <h5 className="fw-bold fs-1">12K+</h5>
-                            <span className="gray-100">properties</span>
-                        </div>
-                        <div>
-                            <h5 className="fw-bold fs-1">10K+</h5>
-                            <span className="gray-100">auction</span>
-                        </div>
-                        <div>
-                            <h5 className="fw-bold fs-1">12K+</h5>
-                            <span className="gray-100">developers</span>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    initial={{x: 400}}
-                    animate={{x: 0}}
-                    transition={{duration: 0.8}}
-                    className="w-100 my-5"
-                >
-                    <div className="cards">
-                      {properties?.slice(0,2).map((property,index)=> <Card key={index} className="bg-white-100 rounded">
-                        <Card.Body className="p-2">
-                          <div className="rounded overflow-hidden position-relative">
-                            <Card.Img
-                                variant="top"
-                                alt="img"
-                                src={property?.images[0]?.imageUrl}
-                                style={{ objectFit:'cover',height:'14rem',width:"16rem"}}
-                            />
-                            {/* <i className="fa-regular fa-heart like" onClick={like}></i> */}
-                          </div>
-                          <h5 className="mt-2 fw-normal">{property?.name}</h5>
-                          <p className="gray-90">{property?.location?.name}</p>
-
-                        </Card.Body>
-                      </Card>)}
-                        {/*<Card className="bg-white-100 rounded">*/}
-                        {/*    <Card.Body className="p-2">*/}
-                        {/*        <div className="rounded overflow-hidden position-relative">*/}
-                        {/*            <Card.Img*/}
-                        {/*                variant="top"*/}
-                        {/*                alt="img"*/}
-                        {/*                src={require("../images/properties/pexels-rachel-claire-8112843 1.webp")}*/}
-                        {/*            />*/}
-                        {/*            <i className="fa-regular fa-heart like" onClick={like}></i>*/}
-                        {/*        </div>*/}
-                        {/*        <h5 className="mt-2 fw-normal">Four_seas Apartments</h5>*/}
-                        {/*        <p className="gray-90">@TECHX nest_quest agency</p>*/}
-
-                        {/*    </Card.Body>*/}
-                        {/*</Card>*/}
-                    </div>
-                </motion.div>
-                <motion.div
-                    initial={{opacity: 0}}
-                    whileInView={{opacity: 1}}
-                    transition={{duration: 0.8}}
-                    // style={{ color: "white" }}
-                    className="d-md-none d-flex justify-content-between align-items-center my-4 features"
-                >
-                    <div>
-                        <h5 className="fw-bold fs-1">12K+</h5>
-                        <span className="gray-100">properties</span>
-                    </div>
-                    <div>
-                        <h5 className="fw-bold fs-1">10K+</h5>
-                        <span className="gray-100">auction</span>
-                    </div>
-                    <div>
-                        <h5 className="fw-bold fs-1">12K+</h5>
-                        <span className="gray-100">developers</span>
-                    </div>
-                </motion.div>
-            </Container>
-        </div>
-    );
+function Loading() {
+  return (
+    <div className="loading position-relative">
+      <Container className="d-flex justify-content-between align-items-center gap-md-5 flex-column flex-md-row mt-3 mt-xl-4 overflow-hidden">
+        <motion.div
+          initial={{ x: -400 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-grow-1"
+        >
+          <AnimationTitles title="Simplify Property Management with TMS" />
+          <p className="gray-90 mt-3 fs-5">
+            Streamline tenant relationships, automate rent collection, and
+            manage maintenance requests all in one powerful platform. Built for
+            landlords who want to focus on growing their portfolio, not managing
+            spreadsheets.
+          </p>
+          <div className="d-flex gap-3 align-items-center">
+            <a href={`${process.env.REACT_APP_TMS}/auth/signup`}>
+              <Button className="m-0 my-3 px-5 py-2 fs-5 fw-bold">
+                Get Started Free
+              </Button>
+            </a>
+            <Link to="features" smooth={true} duration={500}>
+              <Button
+                variant="outline-primary"
+                className="m-0 my-3 px-5 py-2 fs-5 fw-bold"
+              >
+                Learn More
+              </Button>
+            </Link>
+          </div>
+          <div className="d-none d-md-flex justify-content-between align-items-center my-4 gap-5">
+            <div>
+              <h5 className="fw-bold fs-1">500+</h5>
+              <span className="gray-100">Properties Managed</span>
+            </div>
+            <div>
+              <h5 className="fw-bold fs-1">1000+</h5>
+              <span className="gray-100">Active Tenants</span>
+            </div>
+            <div>
+              <h5 className="fw-bold fs-1">99%</h5>
+              <span className="gray-100">On-time Payments</span>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 400 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-100 my-5 d-flex justify-content-center"
+        >
+          <div className="hero-image-container">
+            <img
+              src={require("../images/click-smith-nick254-media-ltd-833P7yxEHF8-unsplash (1).jpg")}
+              alt="Property Management"
+              className="rounded shadow-lg img-fluid"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="d-md-none d-flex justify-content-between align-items-center my-4 features w-100"
+        >
+          <div className="text-center">
+            <h5 className="fw-bold fs-1">500+</h5>
+            <span className="gray-100">Properties</span>
+          </div>
+          <div className="text-center">
+            <h5 className="fw-bold fs-1">1000+</h5>
+            <span className="gray-100">Tenants</span>
+          </div>
+          <div className="text-center">
+            <h5 className="fw-bold fs-1">99%</h5>
+            <span className="gray-100">On-time</span>
+          </div>
+        </motion.div>
+      </Container>
+    </div>
+  );
 }
 
 export default Loading;
