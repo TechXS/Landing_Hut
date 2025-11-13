@@ -24,13 +24,13 @@ function Footer() {
                   className="link-primary link-underline-opacity-0 d-block"
                   to={""}
                 >
-                  techxweb@gmail.com
+                  techxsweb@gmail.com
                 </Link>
                 <Link
                   className="link-primary link-underline-opacity-0 d-block"
                   to={""}
                 >
-                  +254 700 000 000
+                  +254 717588898
                 </Link>
               </div>
             </motion.div>
