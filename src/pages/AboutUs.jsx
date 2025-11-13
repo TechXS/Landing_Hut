@@ -120,8 +120,8 @@ function AboutUs() {
                   className="tms-floating-stat tms-stat-2"
                 >
                   <div className="bg-white rounded-3 shadow p-3">
-                    <h6 className="text-success mb-1 fw-bold">1000+</h6>
-                    <small className="text-muted">Active Tenants</small>
+                    <h6 className="text-success mb-1 fw-bold">24/7</h6>
+                    <small className="text-muted">Support Available</small>
                   </div>
                 </motion.div>
               </div>
