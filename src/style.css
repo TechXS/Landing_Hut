@@ -619,6 +619,94 @@ footer div span {
   transform: translateY(-2px);
 }
 
+/* Enhanced About Section Styles */
+.tms-about-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 80px 0;
+}
+
+.tms-feature-card {
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tms-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(126, 86, 218, 0.15) !important;
+}
+
+.tms-feature-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.tms-feature-card:hover .tms-feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.tms-image-container {
+  position: relative;
+}
+
+.tms-floating-stat {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.tms-stat-1 {
+  top: 20px;
+  right: -20px;
+  animation-delay: 0s;
+}
+
+.tms-stat-2 {
+  bottom: 30px;
+  left: -20px;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.tms-cta-box {
+  background: linear-gradient(135deg, #7E56DA 0%, #356DF6 100%);
+  color: white;
+  box-shadow: 0 10px 40px rgba(126, 86, 218, 0.3);
+}
+
+.tms-cta-box h3 {
+  color: white;
+}
+
+.tms-cta-box p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tms-cta-box .btn-primary {
+  background: white;
+  color: #7E56DA;
+  border: none;
+}
+
+.tms-cta-box .btn-primary:hover {
+  background: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive adjustments for TMS landing */
 @media (max-width: 768px) {
   .hero-image-container {
@@ -628,11 +716,44 @@ footer div span {
   .title {
     font-size: 32px !important;
   }
+  
+  .tms-about-section {
+    padding: 60px 0;
+  }
+  
+  .tms-floating-stat {
+    position: static;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .tms-stat-1,
+  .tms-stat-2 {
+    animation: none;
+  }
+  
+  .tms-image-container {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .title {
     font-size: 40px !important;
+  }
+  
+  .tms-floating-stat {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tms-stat-1 {
+    right: -30px;
+  }
+  
+  .tms-stat-2 {
+    left: -30px;
   }
 }
 
