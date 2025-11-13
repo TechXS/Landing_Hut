@@ -10,6 +10,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 
 function NavBar() {
+  console.log("TMS URL:", process.env.REACT_APP_TMS_SIGNIN);
   return (
     <Navbar expand="lg" className="py-3">
       <Container>
