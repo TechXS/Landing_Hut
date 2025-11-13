@@ -1,6 +1,7 @@
 {
-  "name": "The Hut",
-  "short_name": "The Hut App Suite",
+  "name": "TMS - Tenant Management System",
+  "short_name": "TMS",
+  "description": "Simplify property management with our comprehensive tenant management system",
   "icons": [
     {
       "src": "/favicon.ico",
