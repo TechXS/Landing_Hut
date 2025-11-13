@@ -52,7 +52,11 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex align-items-center gap-2 order">
-          <Button variant="primary" className="btn-outline-purple" onClick={handleSignIn}>
+          <Button
+            variant="primary"
+            className="btn-outline-purple"
+            onClick={handleSignIn}
+          >
             Sign In
           </Button>
           <Button

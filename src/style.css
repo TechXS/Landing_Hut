@@ -621,15 +621,15 @@ footer div span {
 
 .btn-outline-purple {
   background: transparent;
-  color: #7E56DA;
-  border: 2px solid #7E56DA;
+  color: #7e56da;
+  border: 2px solid #7e56da;
   transition: all 0.3s ease;
 }
 
 .btn-outline-purple:hover {
-  background: #7E56DA;
+  background: #7e56da;
   color: white;
-  border-color: #7E56DA;
+  border-color: #7e56da;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(126, 86, 218, 0.3);
 }
